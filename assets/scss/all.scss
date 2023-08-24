@@ -1,5 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp';
+@import 'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap';
+@import '../../node_modules/icofont/dist/icofont.css';
+
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/utilities';
+@import './utils/base';
+
+@import "../../node_modules/bootstrap";
 
 
 @import './layout/header.scss';
@@ -8,4 +17,3 @@
 
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";

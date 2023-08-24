@@ -1,4 +1,53 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo {
+  width: 40px;
+  height: 40px;
+
+  @media (min-width:767px) {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+.form-control.form-change {
+  // padding: 8px 0 8px 12px;
+  line-height: 23.17px;
+  border-radius: 0;
+  border: 2px solid #030303;
+  // @media (min-width:767px) {
+    
+  //   // padding: 14px 0 14px 24px;
+  //   line-height: 23.17px;
+  // }
+}
+
+.search {
+  &-icon {
+    width: 15px;
+    height: 15px;
+    @media (min-width:767px) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &-area {
+    top: 2px;
+  }
+}
+
+
+.resgister,.login{
+  &:hover{
+    color:#9C9E18
+  }
+  h3{
+    &:hover{
+      color:#9C9E18
+    }
+  }
+}
+
+.menu-icon{
+  width: 30px;
+  height: 30px;
 }

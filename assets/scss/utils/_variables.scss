@@ -298,12 +298,12 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #030303 !default;
+$secondary:     #FBFF22 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        #C96464 !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -312,6 +312,8 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "secondary-2": #878787,
+  "secondary-3": #4F4F4F,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -374,11 +376,30 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * .25,///4px
+  8: $spacer * .5,///8px
+  6: 6px,
+  12: $spacer * 0.75,///12px
+  14:14px,
+  16: $spacer,///16px
+  20: $spacer * 1.25,///20px
+  24: $spacer * 1.5,///24px
+  25: 25px,
+  28: $spacer * 1.75,///28px
+  32: $spacer * 2,///32px
+  35: 35px,///35px
+  36: $spacer * 2.25,///36px
+  38: 38px,
+  40: $spacer * 2.5,///40px
+  44: $spacer * 2.75,///40px
+  48: $spacer * 3,///48px
+  50: 50px,
+  58: 58px,
+  60: $spacer * 3.75,///60px
+  64: $spacer * 4,///64px
+  72:$spacer * 4.5,
+  108: $spacer * 6.75,///108px
+  194:$spacer *12.125
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -407,7 +428,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none;//underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -433,8 +454,8 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  // xl: 1200px,
+  // xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -450,9 +471,9 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  lg: 1440px,
+  // xl: 1140px,
+  // xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -540,7 +561,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Yeseva One',"Noto Serif TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -576,12 +597,18 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  64: $font-size-base * 4,///64px
+  60: $font-size-base * 3.75,///60px
+  48: $font-size-base * 3,///32px
+  36: $font-size-base * 2.25,///36px
+  32: $font-size-base * 2,///32px
+  28: $font-size-base * 1.75,///28px
+  24: $font-size-base * 1.5,///24px
+  20: $font-size-base * 1.25,///20px
+  18: $font-size-base * 1.125,///18px
+  16: $font-size-base,///16px
+  0:0,
+  caption:$font-size-base * 0.875///14px
 ) !default;
 // scss-docs-end font-sizes
 
@@ -590,7 +617,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.155;//1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
