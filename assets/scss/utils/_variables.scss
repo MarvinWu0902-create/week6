@@ -419,7 +419,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #f3f1e5!default;////$white
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -454,6 +454,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
+  xl:1120px
   // xl: 1200px,
   // xxl: 1400px
 ) !default;
@@ -851,7 +852,8 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $body-bg !default;
+// $input-bg:                              $body-bg !default;
+$input-bg:                               transparent !default;///custom
 $input-disabled-color:                  null !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
@@ -1273,7 +1275,8 @@ $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+// $card-bg:                           $white !default;
+$card-bg:                           transparent !default;///&custom
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
